@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+	<meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>My Name</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<style>
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+	width:100%;
+}
+
+/* Body Header */
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name */
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/*Section Classes*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -7vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    line-height: 35px;
+    font-size: 1.1rem;
+    margin-top: 50px;
+}
+.para1{
+margin-top:100px;
+}
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.achivement{
+	font-size:20px;
+}
+/*EDUCATION FORM*/
+
+.edu{
+	color:#2857a4;
+	margin-top:40px;
+	font-size:35px;
+}
+
+.education-display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	background-color:#9e9b9b29;
+}
+
+.education-details{
+	display:inline-block;
+    justify-content:space-evenly;
+	margin-left:30px;
+	margin-right:30px;
+	text-align:center;
+}
+
+.education-details p{
+font-size:15px;
+}
+
+.education-details h3{
+font-size:23px;
+}
+
+/* Contact Form */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+@media screen and (max-width: 1000px) {
+    #ok td{
+        display: flex;
+    }
+    textarea{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 650px){
+  input[type="text"],input[type="email"]{
+    width: 15rem;
+    height: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 280px){
+    #ok{
+        width: 17rem;
+    }
+}
+
+</style>
+
+<body>
+    <header id="body-header">
+        <nav>
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">Chakshu</h1>
+            </div>
+        </div>
+    </header>
+	
+    <main>
+
+        <section id="about">
+            <div id="my-image">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg">
+            </div>
+            <div id="about-para">
+                <p class="para1">
+                 Hi, I'm Chakshu.
+				<ul>
+<li>
+				I am 19yr old and I am currently an undergrad persuing my bachelor's in Computer Science and Engineering.</li>
+				<li>
+				Keen learner with easily adapt to changing work environments and technologies.</li>
+				<li>
+				Good Inter-Personal and Communication Skills.
+				</li>
+				<li>Determined.</li>
+				<li>Ability to rapidly build relationship and set up trust.</li>
+				</ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="section-heading mb75px ">
+                <span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </span>
+                <span> SKILLS </span>
+            </h1>
+            <div class="skills-display">
+			<div class="skill-progress">
+                    <div class="fifty-percent mb-orange">
+                        <div class="skill-name">
+                            <span> C </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> Java </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-five-percent mb-orange">
+                        <div class="skill-name">
+                            <span> HTML </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> CSS </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-orange">
+                        <div class="skill-name">
+                            <span> Javascript </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> Bootstrap </span>
+                        </div>
+                    </div>
+                </div>
+			<div class="skill-progress">
+                    <div class="fifty-percent mb-orange">
+                        <div class="skill-name">
+                            <span> SQL </span>
+                        </div>
+                    </div>
+                </div>
+				<ul class="achivement">
+                   <li>Certification in Coursera Introduction to Web Development course</li>
+                   <li>Certification in Coursera Responsive Website basic course.</li>
+				   <li>Certification in Coursera AWS course.</li>
+                   <li>Consistently maintained a good academic and attendance record.</li>
+                </ul>
+
+				</div>
+        </section>
+
+        <section id="education">
+		<h1 class="section-heading mb75px ">
+		<span>
+                    <i class="fas fa-chalkboard-teacher" style="color:#2857a4"></i>
+                </span>
+                <span class="edu"> Education </span>
+		</h1>
+	
+		<div class="education-display">
+		<div class="education-details">
+		<h3>B.Tech in C.S.E</h3>
+		<p>2019-2023</p>
+		<p>Chitkara University Institute of Engineering and Technology</p>
+		<p>Rajpura, Punjab</p>
+		</div>
+		
+		<div class="education-details">
+		<h3>Schooling</h3>
+		<p>2017-2019</p>
+		<p>Percentage:62%</p>
+		<p>Jai Hind Public School</p>
+		<p>Delhi</p>
+		</div>
+		
+		<div class="education-details">
+		<h3>Schooling</h3>
+		<p>2015-2017</p>
+		<p>CGPA:7.4</p>
+		<p>St. Francis Xavier School</p>
+		<p>Hisar, Haryana</p>
+		</div>
+			</div>
+			
+        </section>
+
+    
+        <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+			<br>
+			
+			 <table id="ok">
+                <tr>
+                <td>
+
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+				</td>
+				<td>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                   <p>#2082, Sector-14, Hisar,Haryana</p>
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hisar, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>8059948261</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>chakshu1165.cse19@chitkara.edu.in</span>
+                    </div>
+                </div>
+            </div>
+			   <td>
+                </tr>
+                </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
